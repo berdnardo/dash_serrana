@@ -5,12 +5,11 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    location: "niteroi"
+    location: "serra"
   },
   mutations: {
-    niteroi: state => state.location = 'niteroi',
-    rio: state => state.location = 'rio',
-    brasil: state => state.location = 'brasil'
+    serra: state => state.location = 'serra',
+    relatorio: state => state.location = 'relatorio'
   },
   actions: {
   },

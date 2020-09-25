@@ -3,13 +3,13 @@
     
   >
     <v-app-bar
-      color="deep-purple"
-      dark
+      color="#1A237E"
+      
       
     >
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Painel Covid</v-toolbar-title>
+      <v-toolbar-title ><span style="color:yellow;"> Painel Covid</span></v-toolbar-title>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -41,11 +41,7 @@
         {
         icon:"mdi-home",
         text: "Home",
-        location: "niteroi"
-      },{
-        icon:"mdi-chart-arc",
-        text: "Projeções Niterói",
-        location: "projeção"
+        location: "serra"
       }
       ]
     }),

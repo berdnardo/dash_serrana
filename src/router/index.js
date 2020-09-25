@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import HomeNiteroi from '../locations/niteroi/HomeNiteroi.vue'
-import HomeRio from '../locations/rio_de_janeiro/HomeRio.vue'
-import HomeBrasil from '../locations/brasil/HomeBrasil.vue'
+import HomeSerrana from '../locations/região_serrana/HomeSerrana.vue'
+import HomeRelatorio from '../locations/relatorio/HomeRelatorio'
 
 Vue.use(VueRouter)
 
@@ -15,9 +14,8 @@ Vue.use(VueRouter)
     children: [{
       path: '/',
       components: {
-        niteroi: HomeNiteroi,
-        rio: HomeRio,
-        brasil: HomeBrasil
+        serra: HomeSerrana,
+        relatorio: HomeRelatorio       
       }
     }]
   }

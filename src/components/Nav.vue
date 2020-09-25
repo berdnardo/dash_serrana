@@ -4,15 +4,16 @@
         <v-navigation-drawer
           floating
           expand-on-hover
-          dark>
+          color="#D50000"
+        >
 
           <v-list dense link>
 				<v-list-item v-for="link in links" :key="link.text" @click="conteudo(link.location)">
 					<v-list-item-action>
-						<v-icon>{{ link.icon }}</v-icon>
+						<v-icon color="#FAFAFA">{{ link.icon }}</v-icon>
 					</v-list-item-action>
 					<v-list-item-content>
-						<v-list-item-title>{{ link.text }}</v-list-item-title>
+						<v-list-item-title><span style="color:white;">{{ link.text }}</span></v-list-item-title>
 					</v-list-item-content>
 				</v-list-item>
 			</v-list>  
@@ -28,17 +29,13 @@ export default {
   data: () => ({
     links: [
       {
-        icon:"mdi-chart-bar",
-        text: "Niterói",
-        location: "niteroi"
+        icon:"mdi-attachment", 
+        text: "  Região Serrana",
+        location: "relatorio"
       },{
         icon:"mdi-chart-bar",
-        text: "Rio de Janeiro",
-        location: "rio"
-      },{
-        icon:"mdi-chart-bar",
-        text: "Brasil",
-        location: "brasil"
+        text: "  Painel",
+        location: "serra"
       }
     ]
   }),
