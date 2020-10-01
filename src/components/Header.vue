@@ -9,7 +9,7 @@
     >
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
-      <v-toolbar-title ><span style="color:yellow;"> Painel Covid</span></v-toolbar-title>
+      <v-toolbar-title ><span style="color:yellow;">Painel Covid</span></v-toolbar-title>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -41,7 +41,7 @@
         {
         icon:"mdi-home",
         text: "Home",
-        location: "serra"
+        location: "relatorio"
       }
       ]
     }),
